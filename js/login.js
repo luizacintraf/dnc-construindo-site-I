@@ -11,7 +11,7 @@ window.addEventListener("load",()=>{
         var senha = document.getElementById("senha").value
 
 
-        fetch("http://localhost:3000/login",
+        fetch("https://empresabatatinha.herokuapp.com/login",
         {
             method:"POST",
             headers:{"Content-Type":"Application/json"},

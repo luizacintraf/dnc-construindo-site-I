@@ -12,7 +12,7 @@ if(localStorage.getItem('user') || sessionStorage.getItem('user')){
 
 var events
 
-fetch('http://localhost:3000/eventos',{
+fetch('https://empresabatatinha.herokuapp.com/eventos',{
     method:"GET",
     headers:{"Content-Type": "Application/json"}
 }).then(response => {

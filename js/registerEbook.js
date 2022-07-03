@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
         }else{
 
 
-       fetch('http://localhost:3000/salvarRegistros',
+       fetch('https://empresabatatinha.herokuapp.com/salvarRegistros',
         {
             method:"POST",
             body:JSON.stringify(

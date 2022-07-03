@@ -42,7 +42,7 @@ window.addEventListener("load",()=>{
             alert("O telefone está errado!")
         }else{
             
-            fetch("http://localhost:3000/salvarCadastro",{
+            fetch("https://empresabatatinha.herokuapp.com/salvarCadastro",{
                 method:"POST",
                 headers:{"Content-Type":"Application/json"},
                 body: JSON.stringify({
