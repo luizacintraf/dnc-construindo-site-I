@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="/public/styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d72dcb7a1d.js" crossorigin="anonymous"></script>
+    <script src="js/home.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <button id="darkModeBtn"><img src="/public/images/darkMode.svg" alt="" srcset=""></button>
+        <form>
+            <input type="search" name="search" id="search">
+            <button type="submit" id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <div style="margin: 0px 45px">
+            <i class="fa-solid fa-user icons" id="user"></i>
+            <i class="fa-solid fa-cart-shopping icons"></i>
+
+        </div>
+
+    </header>
+    <main>
+        <div id="mainInfo">
+
+        <h1>Bem vindo, <span id="nomePessoa">fulano</span></h1>
+        <div id="boxAlert">
+            <img src="/public/images/alert.svg" alt="" srcset="">
+            <p>Teremos uma palestra em <b id="cidade">São José dos Campos</b> dia <b id="data">26 de Agosto.</b></p>
+
+            <p> <b>Aproveite essa oportunidade</b> e adquira já seu ingresso.</p>
+        </div>
+        <button class="btnPrimary">Adquirir Ingressos</button>
+        <a href="">Continuar para o Site</a>
+    </div>
+
+    </main>
+    <footer>
+        <div id="vectorImage"></div>
+    </footer>
+    
+</body>
+</html>

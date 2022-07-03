@@ -1,0 +1,70 @@
+body{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+
+#login{
+    background-color: #20DF7F;
+    height: 100%;
+}
+
+#loginDiv{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 50%;
+}
+
+#loginDiv *{
+
+    margin: 20px 0px;
+
+}
+
+#vectorImage{
+    margin-top: 5%;
+}
+
+#mainDiv{
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+#formsInput{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#formsInput > :not(.eye){
+
+    margin: 3px
+}
+
+.btnPrimary{
+    margin-top: 30px;
+}
+
+#socialMedia *{
+    margin: 0px 25px
+}
+
+.eye{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    margin-left: -34px;
+    margin-top: 16px;
+}

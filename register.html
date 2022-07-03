@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="/public/styles/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d72dcb7a1d.js" crossorigin="anonymous"></script>
+    <script src="/js/register.js" type="module"></script>
+</head>
+<body>
+    <main>
+        <div id="mainDiv">
+            <h1>Crie sua conta</h1>
+            <div id="socialMedia">
+                <img src="/public/images/google.svg" alt="" srcset="">
+                <img src="/public/images/facebook.svg" alt="" srcset="">
+                <img src="/public/images/linkedin.svg">
+            </div>
+            <p>Ou use um e-mail para se registrar</p>
+            <div id="formsInput">
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="tel" name="tel" id="tel" placeholder="Telefone">
+
+                <div>
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                    <!-- <i class="fa-solid fa-eye"></i> -->
+                    <span class="fa-solid fa-eye-slash eye" onclick="toggleEye('senha')"></span>
+                    
+                </div>
+                <div>
+                    <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirme suas senha">
+                    <span class="fa-solid fa-eye-slash eye" onclick="toggleEye('confirmar_senha')"></span>
+                </div>
+                
+
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+                <input type="text" name="cep" id="cep" placeholder="CEP">
+            </div>
+            <button id="submit" class="btnPrimary">Criar Conta</button>
+
+        </div>
+        <div>
+            <div id="vectorImage"></div>
+            <button id="darkModeBtn"><img src="/public/images/darkMode.svg" alt="" srcset=""></button>
+        </div>
+    </main>
+    <div id="login">
+        <div id="loginDiv">
+        <h3>Já possui conta?</h3>
+        <p>Para se manter conectado, entre com sua conta</p>
+        <button class="btnSecondary" onclick="location.href='/login.html'">Faça Login</button>
+    </div>
+    </div>
+    
+</body>
+<script>
+
+        const toggleEye = (id)=>{
+            event.srcElement.classList.toggle("fa-eye-slash")
+            event.srcElement.classList.toggle("fa-eye")
+
+            if( document.getElementById(id).type == "text"){
+
+                document.getElementById(id).type="password"
+            }else{
+                document.getElementById(id).type="text"
+            }
+
+            
+        }
+
+</script>
+</html>

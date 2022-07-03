@@ -1,0 +1,55 @@
+body{
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#vectorImage{
+    background-image: url("/public/images/vector.svg");
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3%;
+
+}
+
+#darkModeBtn{
+    position: absolute;
+    left: 2%;
+    top: 88%;
+    border:none;
+    background-color: transparent;
+}
+
+
+#ebook{
+    background-image: url('/public/images/ebook.svg');
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: center;
+    margin: 56px 0px 0px 90px
+
+}
+
+#forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+#forms *{
+    margin: 7px 0px;
+}
+
+.btnPrimary{
+    width: 330px;
+}
