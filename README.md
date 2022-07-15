@@ -4,7 +4,7 @@ Este projeto representa uma página de marketing para captação de cliente atra
 ## Principais funcionalidades
 __ 
 
-- Downlaod de Ebook
+- Download de Ebook
 - Página de cadastro
 - Página de Login
 - Página inicial
